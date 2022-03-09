@@ -1,5 +1,9 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "gradle": {
+    "fileMatch":
+      ["(^|/)buildSrc/src/main/kotlin/Dependencies.kt"]
+  }
 }
