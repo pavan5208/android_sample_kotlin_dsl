@@ -4,6 +4,6 @@
   ],
   "gradle": {
     "fileMatch":
-      ["(^|/)buildSrc/*"]
+      ["(^|/)buildSrc/*" ]
   }
 }

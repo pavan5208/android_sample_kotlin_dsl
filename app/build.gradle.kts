@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    kotlin("android")
+//    alias(libs.plugins.android)
 }
 
 android {
@@ -31,18 +31,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions {
-            jvmTarget = "1.8"
-        }
-    }
 }
 
 dependencies {
-    implementation(Deps.kotlin)
-    implementation(Deps.appCompat)
-    implementation(Deps.materialDesign)
-    implementation(Deps.timber)
-    implementation(Deps.constraintLayout)
-    testImplementation(Deps.junit)
+    implementation(libs.kotlin)
+    implementation(libs.appCompat)
+    implementation(libs.materialDesign)
+    implementation(libs.timber)
+    implementation(libs.constraintLayout)
+    testImplementation(libs.junit)
 }
