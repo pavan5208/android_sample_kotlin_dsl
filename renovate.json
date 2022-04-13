@@ -2,8 +2,6 @@
   "extends": [
     "config:base"
   ],
-  "gradle": {
-    "fileMatch":
-      ["(^|/)buildSrc/*" ]
-  }
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0
 }
