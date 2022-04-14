@@ -2,8 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "gradle": {
-    "fileMatch":
-      ["(^|/)buildSrc/*" ]
-  }
+  "dependencyDashboard": true
 }
